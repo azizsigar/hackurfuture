@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "hackurfuture",
+			"path": "."
+		},
+		{
+			"name": "img",
+			"path": "../slider auto manual/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "hackurfuture"
+	}
+}
