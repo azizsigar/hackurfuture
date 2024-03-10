@@ -1,5 +1,6 @@
-hamburgermenu
-slider
-go top
-todo
+hamburgermenu avaible in responsive
+slider auto-manuel play
+go top button when scroll down
+
 autoplay video
+

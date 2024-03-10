@@ -5,51 +5,46 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentSlide = 0;
     let slideInterval;
 
-    // İleri gitme işlevi
+    // next slide move
     function nextSlide() {
         goToSlide(currentSlide + 1);
     }
 
-    // Geri gitme işlevi
+    // previous slide
     function prevSlide() {
         goToSlide(currentSlide - 1);
     }
 
-    // Belirli bir slayda gitme işlevi
     function goToSlide(n) {
         slides[currentSlide].style.display = 'none';
         currentSlide = (n + slides.length) % slides.length;
         slides[currentSlide].style.display = 'block';
     }
 
-    // Otomatik geçiş işlevi
+    // auto play
     function startSlideShow() {
-        slideInterval = setInterval(nextSlide, 1000); // 2 saniyede bir geçiş yap
+        // move after 1 second
+        slideInterval = setInterval(nextSlide, 1000); // 
     }
-
-    // Otomatik geçişi başlat
     startSlideShow();
 
-    // Slider üzerine gelindiğinde otomatik geçişi durdur
+    // stop for hovering
     slides.forEach(slide => {
         slide.addEventListener('mouseenter', () => {
             clearInterval(slideInterval);
         });
     });
 
-    // Slider üzerinden çıkıldığında otomatik geçişi başlat
+    // Stop slider remove hover
     slides.forEach(slide => {
         slide.addEventListener('mouseleave', () => {
             startSlideShow();
         });
     });
 
-    // Önceki düğmeye tıklama olayı
+    // clicks, next-prev
     prevButton.addEventListener('click', prevSlide);
-
-    // Sonraki düğmeye tıklama olayı
     nextButton.addEventListener('click', nextSlide);
 
-    // İlk slaydı göster
     slides[currentSlide].style.display = 'block';
 });

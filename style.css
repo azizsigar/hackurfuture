@@ -5,10 +5,11 @@
     font-optical-sizing: auto;
     font-size: x-large;
 }
+
 /* burger menu */
 header {
     background-color: dodgerblue;
-    margin: 5px auto ;
+    margin: 5px auto;
 
 }
 
@@ -56,10 +57,11 @@ a {
     -webkit-transition: all 0.5s ease-in-out;
     background-color: black;
 }
-/* slider */
+
+/* slider  responsive */
 .slider {
     width: 100%;
-    max-width: 800px; /* Max width for responsiveness */
+    max-width: 800px;
     overflow: hidden;
     position: relative;
     box-shadow: 5px 5px black;
@@ -67,24 +69,27 @@ a {
     margin: 1rem auto;
     height: auto;
 }
-.player{
+
+.player {
     display: flex;
     padding: 3px;
     flex-wrap: wrap;
     margin: auto;
 }
+
 video {
     margin: auto;
     width: 5rem;
     height: 10rem;
 }
+
 .slides {
     display: flex;
 }
 
 .slides img {
-    width: 100%; /* Responsive image width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 button {
@@ -105,9 +110,10 @@ button {
 #next {
     right: 0;
 }
-/* go top btn */
-.to-top{
-    background-color: powderblue;
+
+/* scroll to top btn */
+.to-top {
+    background-color: dodgerblue;
     position: fixed;
     bottom: 16px;
     right: 32px;
@@ -124,32 +130,36 @@ button {
     pointer-events: none;
     transition: all .4s;
 }
-.to-top.active{
-bottom: 32px;
-pointer-events: auto;
-opacity: 1;
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
-.my-projects-link{
+
+.my-projects-link {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
-.social-media{
+
+.social-media {
     display: flex;
     flex-direction: column;
     gap: 14px;
     align-items: center;
     justify-content: center;
-    background-color: powderblue;
+    background-color: dodgerblue;
     margin: auto;
     padding: 4px;
     box-shadow: 3px 3px black;
     width: 99%;
     border: 2px solid black;
 }
-.skills{
+
+.skills {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,10 +173,11 @@ opacity: 1;
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-    p{
+    p {
         font-size: large;
     }
-    /* burgermenu */
+
+    /* burgermenu responsive*/
     .hamburger {
         display: block;
     }
@@ -191,7 +202,7 @@ opacity: 1;
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: pink;
+        background-color: dodgerblue;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -201,13 +212,17 @@ opacity: 1;
         margin: 1rem 0;
     }
 
+
+
     .nav-menu.active {
         left: 0;
         background-color: dodgerblue;
-        margin: 5px auto ;
+        margin: 5px auto;
 
     }
-    .my-projects-link, img{
+
+    .my-projects-link,
+    img {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -216,23 +231,26 @@ opacity: 1;
         width: 99%;
         height: 100%;
     }
-    .social-media{
+
+    .social-media {
         display: flex;
         flex-direction: column;
         gap: 14px;
         align-items: center;
         justify-content: center;
-        background-color: powderblue;
+        background-color: dodgerblue;
         margin: auto;
         padding: 4px;
         box-shadow: 3px 3px black;
         width: 99%;
         border: 2px solid black;
     }
-    footer{
+
+    footer {
         margin: 1rem;
     }
-    .skills{
+
+    .skills {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -241,5 +259,6 @@ opacity: 1;
         border: 1px solid black;
         width: 99%;
         gap: 11px;
+        background-color: dodgerblue;
     }
 }
